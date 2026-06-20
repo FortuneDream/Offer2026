@@ -1,0 +1,18 @@
+package doublepoint;
+
+//移动零
+//用单独一个index记录当前位置，不等于零直接写入数组，然后最后填充0
+public class MoveZeros {
+    public static void moveZeroes(int[] nums) {
+        int cur = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i]!=0){
+                nums[cur] = nums[i];
+                cur++;
+            }
+        }
+        for (int i =cur;i<nums.length;i++){
+            nums[i]=0;
+        }
+    }
+}
