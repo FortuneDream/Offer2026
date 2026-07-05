@@ -3,6 +3,10 @@ package doublepoint;
 //移动零
 //用单独一个index记录当前位置，不等于零直接写入数组，然后最后填充0
 public class MoveZeros {
+
+    public static void main(String[] args) {
+        moveZeroes(new int[]{0,1,0,3,12});
+    }
     public static void moveZeroes(int[] nums) {
         int cur = 0;
         for (int i = 0; i < nums.length; i++) {
