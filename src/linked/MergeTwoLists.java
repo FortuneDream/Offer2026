@@ -2,6 +2,7 @@ package linked;
 
 import data.ListNode;
 //合并两个有序链表
+// 虚拟头节点拼接有序链表
 public class MergeTwoLists {
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode head = new ListNode(0);
